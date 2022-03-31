@@ -1,11 +1,13 @@
 import React from "react";
 import { Form, Formik } from "formik";
-import Input from '../shared/input/input';
+import { useNavigate } from 'react-router-dom';
 import BaseBtn from '../shared/baseBtn/baseBtn';
-import styles from './form.module.scss';
+import Input from '../shared/input/input';
 import { validateForm } from './validate';
+import styles from './form.module.scss';
 
 function FormRegidtred(): JSX.Element {
+  const navigate = useNavigate();
 
   return (
     <Formik
@@ -14,8 +16,8 @@ function FormRegidtred(): JSX.Element {
         password: ''
       }}
       validationSchema={validateForm}
-      onSubmit={(values) => {
-        console.log(values);
+      onSubmit={() => {
+        navigate('/user')
       }}
     >
       {(formik) => (

@@ -1,6 +1,6 @@
 @import '../../../index.scss';
 
-.label{
+.label {
   position: relative;
   color: $textColor;
   font-size: 24px;
@@ -10,7 +10,7 @@
   margin-bottom: 30px;
   width: 100%;
 
-  .input{
+  .input {
     width: 100%;
     border: 1px solid $borderField;
     line-height: 32px;
@@ -19,16 +19,22 @@
     color: $colorInput;
   }
 
-  .input:focus{
+  .input:focus {
     outline: none;
     border: 2px solid $borderFocus;
   }
 
-  .error{
-    color:red;
+  .error {
+    color: red;
     font-size: 12px;
     position: absolute;
     right: 5px;
-    line-height: 40px;
+    line-height: 37px;
+  }
+
+  @media(max-width: 380px) {
+    .error {
+      font-size: 10px;
+    }
   }
 }
