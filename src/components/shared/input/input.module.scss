@@ -1,6 +1,7 @@
 @import '../../../index.scss';
 
 .label{
+  position: relative;
   color: $textColor;
   font-size: 24px;
   font-weight: 700;
@@ -21,5 +22,13 @@
   .input:focus{
     outline: none;
     border: 2px solid $borderFocus;
+  }
+
+  .error{
+    color:red;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    line-height: 40px;
   }
 }

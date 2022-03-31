@@ -3,6 +3,7 @@ import { Form, Formik } from "formik";
 import Input from '../shared/input/input';
 import BaseBtn from '../shared/baseBtn/baseBtn';
 import styles from './form.module.scss';
+import { validateForm } from './validate';
 
 function FormRegidtred(): JSX.Element {
 
@@ -12,6 +13,7 @@ function FormRegidtred(): JSX.Element {
         email: '',
         password: ''
       }}
+      validationSchema={validateForm}
       onSubmit={(values) => {
         console.log(values);
       }}

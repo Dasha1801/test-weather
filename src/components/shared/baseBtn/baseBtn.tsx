@@ -5,6 +5,7 @@ import styles from "./baseBtn.module.scss";
 function BaseBtn({ text, onClick }: IPropsBtn): JSX.Element {
   return (
     <button
+      type='submit'
       className={styles.baseButton}
       onClick={onClick}
     >

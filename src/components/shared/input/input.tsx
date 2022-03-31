@@ -7,18 +7,17 @@ function Input({
   label,
   ...props
 }: IInput & FieldHookConfig<string>): JSX.Element {
-  const [field] = useField(props);
+  const [field, meta] = useField(props);
 
   return (
-
     <label htmlFor={props.name} className={styles.label}>
       {label}
       <input
         {...field}
         className={styles.input}
       />
+      {meta.touched && meta.error ? <span className={styles.error}>{meta.error}</span> : null}
     </label>
-
   );
 }
 
