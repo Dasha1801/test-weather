@@ -1,5 +1,5 @@
-import { FieldHookConfig, useField } from "formik";
 import React from "react";
+import { FieldHookConfig, useField } from "formik";
 import { IInput } from '../interfaces';
 import styles from './input.module.scss';
 

@@ -6,11 +6,13 @@ import styles from './userPage.module.scss';
 
 
 function UserPage(): JSX.Element {
-  return <main className={styles.main}>
-    <Heading text='Weather' />
-    <Weather />
-    <CityOptions />
-  </main>
+  return (
+    <main className={styles.main}>
+      <Heading text='Weather' />
+      <Weather />
+      <CityOptions />
+    </main>
+  )
 }
 
 export default UserPage;

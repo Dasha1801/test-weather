@@ -1,6 +1,6 @@
 @import '../../../index.scss';
 
-.baseButton{
+.baseButton {
   color: $btnColor;
   font-weight: 700;
   font-size: 24px;
@@ -11,6 +11,6 @@
   cursor: pointer;
 }
 
-.baseButton:hover{
+.baseButton:hover {
   background-color: $btnBgHover;
 }

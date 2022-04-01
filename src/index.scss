@@ -8,7 +8,7 @@ $borderFocus: #84c7ae;
 $colorInput: #00000080;
 $textColor: #32403b;
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#root{
+#root {
   margin: 0 auto;
   height: 100vh;
   max-width: 900px;
@@ -29,5 +29,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-

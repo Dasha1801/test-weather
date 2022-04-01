@@ -1,13 +1,13 @@
-import { Form, Formik } from "formik";
 import React from "react";
+import { Form, Formik } from "formik";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { getDataWeather } from '../../redux/asyncActions';
 import { logIn } from '../../redux/slices/logInSlice';
 import BaseBtn from '../shared/baseBtn/baseBtn';
 import Input from '../shared/input/input';
-import styles from './form.module.scss';
 import { validateForm } from './validate';
+import styles from './form.module.scss';
 
 function FormRegidtred(): JSX.Element {
   const dispatch = useDispatch();
