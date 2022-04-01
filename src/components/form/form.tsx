@@ -1,12 +1,16 @@
-import React from "react";
 import { Form, Formik } from "formik";
+import React from "react";
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { getDataWeather } from '../../redux/asyncActions';
+import { logIn } from '../../redux/slices/logInSlice';
 import BaseBtn from '../shared/baseBtn/baseBtn';
 import Input from '../shared/input/input';
-import { validateForm } from './validate';
 import styles from './form.module.scss';
+import { validateForm } from './validate';
 
 function FormRegidtred(): JSX.Element {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   return (
@@ -17,7 +21,9 @@ function FormRegidtred(): JSX.Element {
       }}
       validationSchema={validateForm}
       onSubmit={() => {
-        navigate('/user')
+        dispatch(logIn(true));
+        navigate('/user');
+        getDataWeather()(dispatch);
       }}
     >
       {(formik) => (
