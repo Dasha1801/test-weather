@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.select {
+  color: $textColor;
+  border: 2px solid $borderField;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.select:focus {
+  outline: none;
+  border: 2px solid $borderFocus;
+}

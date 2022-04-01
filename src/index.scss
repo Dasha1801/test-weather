@@ -1,0 +1,31 @@
+$baseBg: #f6fbf9;
+$headingColor: #212b27;
+$btnBg: #9de1dcde;
+$btnBgHover: #84c7ae;
+$btnColor: #fff;
+$borderField: #0000001a;
+$borderFocus: #84c7ae;
+$colorInput: #00000080;
+$textColor: #32403b;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background-image: url('https://res.cloudinary.com/megacritic/image/upload/v1648738185/eu00jjckcxv0jpi2lcta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#root {
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

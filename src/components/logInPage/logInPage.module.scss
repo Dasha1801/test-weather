@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.main {
+  margin: 0 auto;
+  width: 520px;
+  height: 520px;
+  border-radius: 50px;
+  background-color: $baseBg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 45px;
+}
+
+@media(max-width:540px) {
+  .main {
+    max-width: 90%;
+  }
+}

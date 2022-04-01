@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+.weather {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $textColor;
+  font-weight: 400;
+  font-size: 32px;
+
+  .icon {
+    width: 75px;
+  }
+}
