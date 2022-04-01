@@ -4,8 +4,8 @@ import { IWeather, IStateWeather } from '../../components/shared/interfaces';
 const initialState: IStateWeather = {
   weather: {
     name: '',
-    weather: [{ icon: '' }],
-    main: { temp: 0 }
+    icon: '',
+    temp: 0
   }
 };
 

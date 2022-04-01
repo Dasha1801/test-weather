@@ -11,8 +11,8 @@ function Weather(): JSX.Element {
   return (
     <div className={styles.weather}>
       <h6>{weather.name}</h6>
-      <img src={getIcon(weather.weather[0].icon)} className={styles.icon} alt='icon' />
-      <span>{getTemp(weather.main.temp)}</span>
+      <img src={getIcon(weather.icon)} className={styles.icon} alt='icon' />
+      <span>{getTemp(weather.temp)}</span>
     </div>
   )
 }

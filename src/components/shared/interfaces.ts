@@ -15,17 +15,10 @@ export interface IStateLogIn {
   isLogin: boolean
 }
 
-interface IIcon { icon: string }
-
-
-interface ITemp {
-  temp: number
-}
-
 export interface IWeather {
   name: string
-  weather: [IIcon]
-  main: ITemp
+  icon: string
+  temp: number
 }
 
 export interface IStateWeather {

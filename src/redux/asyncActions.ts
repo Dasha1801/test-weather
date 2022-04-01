@@ -5,5 +5,5 @@ import { getData } from './slices/weatherSlice';
 export const getDataWeather = (city = 'Minsk,by') =>
   async function getWeather(dispatch: (arg0: { payload: IWeather; type: string }) => void) {
     const { data } = await fetchWeather(city);
-    dispatch(getData(data));
+    dispatch(getData({ name: data.name, icon: data.weather[0].icon, temp: data.main.temp }));
   };
